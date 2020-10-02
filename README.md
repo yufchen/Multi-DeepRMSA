@@ -13,7 +13,6 @@ tar xvf openjdk-14_linux-x64_bin.tar.gz
 sudo mkdir /usr/lib/jvm
 sudo cp -r ./jdk-14 /usr/lib/jvm
 ```
-
 Add env variables to ~/.bashrc
 ```
 sudo gedit ~/.bashrc
@@ -31,9 +30,13 @@ See /ONOS_Project/DRL_py/requirements.txt
 See /ONOS_Project/conf.cfg
 
 ## Run
+Startup sequence:
+Broker->Broker_DRL->Serverp->Serverp_DRL->Server->Server_DRL
+(Serverp means passive)
 ```
 cd somewhere/ONOS_Project
 java -jar ./out/artifacts/ONOS_Project_jar/ONOS_Project.jar Broker
 java -jar ./out/artifacts/ONOS_Project_jar/ONOS_Project.jar Serverp
 java -jar ./out/artifacts/ONOS_Project_jar/ONOS_Project.jar Server
 ```
+
