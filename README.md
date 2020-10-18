@@ -1,6 +1,7 @@
 # Multi-DeepRMSA
 Detailed design & results are in  Multi_DeepRMSA.pptx
-
+![img1](https://github.com/yufchen/Multi-DeepRMSA/blob/main/img/structure.png)
+![img2](https://github.com/yufchen/Multi-DeepRMSA/blob/main/img/Blocking3.png) 
 ## Environment set up
 All three controllers’ implementations are based on Java, DRL modules are in Python.
 
